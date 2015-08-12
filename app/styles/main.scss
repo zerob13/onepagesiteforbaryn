@@ -1,5 +1,82 @@
 @import "reset";
 @import "fontawesome";
 
+@keyframes baryn-bg {
+  0% {
+    background-position: 4% 0%;
+  }
+  50% {
+    background-position: 97% 100%;
+  }
+  100% {
+    background-position: 4% 0%;
+  }
+}
 
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  background: linear-gradient(342deg, #00bcd4, #1065c8);
+  background-size: 400% 400%;
+  animation: baryn-bg 30s ease infinite;
+}
+
+.avatar-container {
+  display: block;
+  position: relative;
+  height: 130px;
+  line-height: 130px;
+  margin-top: 40px;
+  .avatar {
+    display: block;
+    background: url("../images/avatar.jpg");
+    background-size: 128px 128px;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
+
+.name {
+  color: #eee;
+  height: 32px;
+  position: relative;
+  margin-top: 16px;
+  line-height: 32px;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.link-wrap {
+  margin-top: 50px;
+}
+
+.links {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  .icon-b {
+    font-size: 4rem;
+    color: #eee;
+    &:hover {
+      color: #EEFF41;
+    }
+  }
+}
+
+.motto {
+  color: #eee;
+  height: 32px;
+  position: relative;
+  margin-top: 30px;
+  line-height: 32px;
+  font-size: 1.6rem;
+  text-align: center;
+  &.-ch{
+    margin-top:1px;
+  }
+}
 
